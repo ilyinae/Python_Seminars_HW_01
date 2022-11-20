@@ -12,5 +12,5 @@ if day not in days_num:
     print('В неделе только 7 дней :( - Введите номер от 1 до 7')
 elif int(day) in range(1,6):
     print(f'Трудовые будни - {days[days_num.index(day)]}')
-elif int(day) in [6,7]:
+else:
     print(f'Ура! Выходной! - {days[days_num.index(day)]}')
