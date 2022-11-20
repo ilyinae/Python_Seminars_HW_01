@@ -33,7 +33,3 @@ elif x < 0 and y < 0:
    print(out_point, out_place,'в III четверти')
 else:
    print(out_point, out_place,'в IV четверти')
-
-
- 
-
