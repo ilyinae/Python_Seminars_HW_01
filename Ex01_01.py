@@ -6,12 +6,11 @@
 # - 1 -> нет
 
 days = ['Понедельник', 'Вторник','Среда', 'Четверг','Пятница','Суббота', 'Воскресенье']
-days_num = [1,2,3,4,5,6,7]
-day = int(input('Введите номер дня недели:'))
-day_name = days[days_num.index(day)]
-if day in range(6):
-    print(f'Трудовые будни - {day_name}')
-elif day in [6,7]:
-    print(f'Ура! Выходной! - {day_name}')
-else:
-    print('В неделе только 7 дней :( Введите номер от 1 до 7')
+days_num = ['1','2','3','4','5','6','7']
+day = input('Введите номер дня недели:')
+if day not in days_num:
+    print('В неделе только 7 дней :( - Введите номер от 1 до 7')
+elif int(day) in range(1,6):
+    print(f'Трудовые будни - {days[days_num.index(day)]}')
+elif int(day) in [6,7]:
+    print(f'Ура! Выходной! - {days[days_num.index(day)]}')
